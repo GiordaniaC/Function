@@ -1,6 +1,8 @@
 var anno = parseInt(prompt("Inserisci l' anno di nascita: "));
 var scadenza = parseInt(prompt("Inserisci l'anno di scadenza: "));
 
+var età = 2024 - anno;
+
 function rinnovaPatente(anno, scadenza) {
     if ((2024-anno)>= 18 && (2024-anno)<78) {
         console.log("La patente è stata rinnovata e la nuova data di scadenza è:" ,scadenza+10);
